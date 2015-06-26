@@ -55,9 +55,7 @@ End Code
         <div class="thumbnail">
             <div class="caption">
                 <h4>Empanadas de Jamón y Queso</h4>
-                <p>
-                    <a href="" class="label label-default" rel="tooltip" title="Ver receta completa">Ver receta</a>
-                </p>
+                
             </div>
             <img src="http://s3.amazonaws.com/gmi-digital-library/226e0d9f-b30f-4063-a321-1309d200faf7.jpg" alt="..." class="img-responsive">
         </div>
@@ -66,9 +64,7 @@ End Code
         <div class="thumbnail">
             <div class="caption">
                 <h4>Parfait de Ricotta, Mango y Lima</h4>
-                <p>
-                    <a href="" class="label label-default" rel="tooltip" title="Ver receta completa">Ver receta</a>
-                </p>
+                
             </div>
             <img src="http://s3.amazonaws.com/gmi-digital-library/a316d314-8466-4c4a-8f09-fa47e62fd496.jpg" alt="..." class="img-responsive">
         </div>
@@ -77,11 +73,27 @@ End Code
         <div class="thumbnail">
             <div class="caption">
                 <h4>Tallarines Caseros con Salsa Bolognesa</h4>
-                <p>
-                    <a href="" class="label label-default" rel="tooltip" title="Ver receta completa">Ver receta</a>
-                </p>
+                
             </div>
             <img src="http://s3.amazonaws.com/gmi-digital-library/d07ebdd5-0cdf-4cb8-826b-f3639ad024a9.jpg" alt="..." class="img-responsive">
         </div>
     </div>
 </div>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("[rel='tooltip']").tooltip();
+
+        $('.thumbnail').hover(
+            function () {
+                $(this).find('.caption').slideDown(250); //.fadeIn(250)
+            },
+            function () {
+                $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            }
+        );
+    });
+</script>	
