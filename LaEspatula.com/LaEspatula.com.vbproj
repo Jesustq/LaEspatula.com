@@ -257,9 +257,10 @@
     <Content Include="Views\Account\Manage.vbhtml" />
     <Content Include="Views\Account\Register.vbhtml" />
     <Content Include="Views\Shared\_LoginPartial.vbhtml" />
-    <Content Include="Views\Recetas\Index.vbhtml" />
+    <Content Include="Views\Recetas\Ver.vbhtml" />
     <Content Include="Views\Home\Cosa.vbhtml" />
     <Content Include="Views\Recetas\Nueva.vbhtml" />
+    <Content Include="Views\Recetas\Cargar.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

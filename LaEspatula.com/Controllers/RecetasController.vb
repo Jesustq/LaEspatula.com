@@ -4,7 +4,12 @@ Public Class RecetasController
     Inherits Controller
 
     ' GET: /Recetas
-    Function Index() As ActionResult
+    Function Ver() As ActionResult
+        Return View()
+    End Function
+
+    Function Cargar(value As String) As ActionResult
+        ViewData("Id") = value
         Return View()
     End Function
 
